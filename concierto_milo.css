@@ -1,0 +1,178 @@
+#nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(161, 161, 161);
+    list-style-type: none;
+    font-family:  Franklin Gothic, Arial Bold;
+}
+li{
+    margin: 5px;
+    font-size: 0.9em;
+}
+#nav li{
+    margin: 5px;
+    font-size: 6mm;
+    
+}
+nav li :hover{
+    background-color: rgb(211, 207, 207);
+}
+html{
+    scroll-behavior: smooth;
+}
+nav a{
+    color: rgb(15, 15, 15);
+    padding: 10px;
+    width: 150px;
+   
+}
+a{
+    text-decoration: none;
+}
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+h2#title{
+    font-size: 2.5vw;
+   
+    text-align: center;
+    color: rgba(148, 145, 148, 0.89);
+    text-shadow: 0.5px 1px 1px black;
+    font-family:  Franklin Gothic, Arial Bold;
+}
+
+
+
+
+div#general{
+margin: auto;
+
+width: 960px;
+
+
+
+}
+div#ofertas{
+ float: right;
+    width: 300px;
+    height: 500px;
+
+
+}
+
+button{
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+         #9500ff,
+         #09f,
+         #00DDFF
+    );
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+     margin-left: 1cm;
+    
+}
+
+button span{
+    background-color: black;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+button:hover span{
+background: none;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.fecha{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.856);
+    text-shadow: 0.5px 1px 1px black;
+    font-family:  Franklin Gothic, Arial Bold;
+}
+
+
+div#novedades{
+
+    width: 640px;
+    height: 130px;
+  
+}
+div#body{
+margin-top: 20px;
+width: 640px;
+height: 580px;
+justify-content: center;
+}
+
+
+.Preventa{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    margin-top: 3mm;
+}
+
+.cronograma{
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    margin-top: 3mm;
+    float: right;
+}
+
+.info{ 
+     margin-bottom: 32px;
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    margin-top: 8mm;
+    
+    letter-spacing: 0.09mm;
+   
+}
+
+
+.foto{
+
+    width: 85%;
+    height: 80%;
+    overflow: hidden;
+    
+    margin: 0 auto;
+    size: cover;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+}
+
+
+.encabezado-img{
+    background: url('./img_concierto/milo_s_0.png') no-repeat center;
+    height: 500px;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+   
+}

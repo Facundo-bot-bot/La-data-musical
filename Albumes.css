@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+::-webkit-scrollbar { width: 0px; height: 9px;}
+::-webkit-scrollbar-button { width: 0px; height: 0px;}
+::-webkit-scrollbar-thumb { background: transparent; border: 0px none #fff; border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover { background: #3a77a1;}
+::-webkit-scrollbar-thumb:active { background: #8dd0d8;}
+::-webkit-scrollbar-track {background: transparent;border: 0px solid #aaa; border-radius: 5px;}
+::-webkit-scrollbar-track:hover { background: #e4e4e4;}
+::-webkit-scrollbar-track:active { background: #d2d2d2;}
+::-webkit-scrollbar-corner { background: transparent;}
+.todo{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.todo2{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.contenedor-conciertos {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 20px;
+}
+.contenedor {
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+.card {
+	border-radius: 10px;
+	min-height: 180px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+.card .textos {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#nav{
+    display: flex; 
+    justify-content: center;
+    background-color: rgb(29, 22, 0);
+    list-style-type: none;
+    font-family:  Franklin Gothic, Arial Bold;
+}
+#nav li{
+    margin: 5px;
+    font-size: 6mm;
+}
+li{
+    margin: 5px;
+    font-size: 0.9em;
+}
+nav a{
+color: white;
+padding: 10px;
+width: 150px;
+ }
+
+nav li :hover{
+    background-color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.backgroundcontainer{
+    width:100%;
+    height: fit-content; 
+    background: linear-gradient(to bottom,
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    #1cd463); 
+    border: 0px;
+}
+.backgroundcontainer2{
+    width:100%;
+    height: fit-content; 
+    background: url('./img/SpotifyFondo.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size:cover;
+    border: 0px;
+    background-attachment: fixed;
+}
+.backgroundcontainer3{
+    width:100%;
+    height: fit-content; 
+    background: url('./img/appleFondo.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size:cover;
+    border: 0px;
+    background-attachment: fixed;
+}
+h1{
+    margin-top: 20px;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 13cm;
+    margin-right: 2cm;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 2cm;
+    margin-right: 12.5cm;
+    text-align:right;
+}
+h4{
+    margin-top: 20px;
+    margin-bottom: 34px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.imgPrincipio{
+    border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+.titulo{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(181, 184, 0);
+}
+.titulo2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(26, 156, 0);
+}
+.titulo3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to left,
+    rgb(255, 46, 99),
+    rgb(170, 0, 23),
+    rgb(0, 100, 131));
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-size: 60px;
+}
+.titulo4{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 52px;
+    background: linear-gradient(to right,
+    rgb(0, 0, 0),
+    rgb(17, 102, 0),
+    rgb(99, 0, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+.subtitulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+img{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 30% cover 50%;
+    animation-fill-mode: both;
+    border-radius: 10px;
+}
+.topNum{
+    display: inline-block;
+    font-size: 130px;
+    overflow: hidden;
+    margin-left: 145px;
+    float: left;
+    color: rgb(206, 173, 42);
+    width: max-content;
+}
+.topNumA{
+    display: inline-block;
+    font-size: 130px;
+    overflow: hidden;
+    margin-right: 145px;
+    margin-left: left;
+    float: right;
+    color: rgb(206, 173, 42);
+    width: max-content;
+}
+.topNumA2{
+    display: inline-block;
+    font-size: 130px;
+    overflow: hidden;
+    margin-left: 145px;
+    float: left;
+    color: rgb(95, 95, 95);
+    width: max-content;
+}.topNumA3{
+    display: inline-block;
+    font-size: 130px;
+    overflow: hidden;
+    margin-right: 145px;
+    float: right;
+    color: rgb(173, 104, 65);
+    width: max-content;
+}
+.topNum2{
+    display: inline-block;
+    font-size: 130px;
+    margin-right: 145px;
+    color: rgb(95, 95, 95);
+    width: max-content;
+    overflow: hidden;
+    float: right;
+}
+.topNum3{
+    display: inline-block;
+    font-size: 130px;
+    text-align: left;
+    margin-left: 145px;
+    color: rgb(173, 104, 65);
+    width: max-content;
+    float: left;
+    overflow: hidden;
+}
+.uvst{
+    float: left;
+    margin-right: 20px;
+}
+.divide{
+    float: right;
+    margin-left: 20px;
+}
+.starboy{
+    float: left;
+    margin-right: 20px;
+}
+.hb{
+    float: left;
+    margin-right: 20px;
+}
+.sour{
+    float: left;
+    margin-right: 20px;
+}
+@media screen and (max-width: 900px) {
+	/* Estilos para pantallas con un ancho máximo de 900px */
+}
+@media screen and (max-width: 700px) {
+	/* Estilos para pantallas con un ancho máximo de 700px */
+}
+@media screen and (max-width: 600px) {
+	/* Estilos para pantallas con un ancho máximo de 600px */
+}

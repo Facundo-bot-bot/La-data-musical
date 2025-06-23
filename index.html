@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="nav">
+            <li id="nave"><a href="index.html">Inicio</a></li>
+            <li id="nave"><a href="artistas.html">Artistas</a></li>
+            <li id="nave"><a href="Albumes.html">Albumes</a></li>
+            <li id="nave"><a href="conciertos.html">Conciertos</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="backgroundcontainer">
+        <section class="celeb-section">
+            <h1 class="line-title">La Data Musical</h1>
+            <h4> Hecho por Facundo Arce y Joaquín Gil </h4>
+            <div class="owl-carousel custom-carousel owl-theme">
+                <div class="item active" style="background-image: url('./img_pagPrincipal/introduccion.jpg');">
+                    <div class="item-desc">
+                        <h3>INTRODUCCIÓN</h3>
+                        <div class="glass">
+                            <p>¡Bienvenidos a nuestra página dedicada a los artistas musicales! Aquí encontrarás un
+                                espacio donde podrás sumergirte en el apasionante mundo de la música y explorar la
+                                diversidad de géneros, estilos y talentos. Nuestra plataforma está diseñada para
+                                brindarte información sobre tus artistas favoritos, desde los grandes iconos de la
+                                industria hasta los artistas emergentes más prometedores. Descubre sus historias,
+                                influencias y trayectorias, y déjate llevar por sus melodías y letras que han dejado
+                                huella en la historia de la música.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('img_pagPrincipal/artistas.jpg');">
+                    <div class="item-desc">
+                        <h3>ARTISTAS</h3>
+                        <div class="glass">
+                            <p>En esta sección podrás explorar álbumes, canciones y conocer más sobre diversos artistas
+                                musicales. Cada perfil incluye detalles sobre su trayectoria, estilos musicales y logros
+                                destacados. Además, tendrás acceso a una selección de sus canciones más populares y
+                                álbumes más icónicos. Descubre nuevos artistas y profundiza en la música de tus
+                                favoritos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('./img_pagPrincipal/albums-hd-wallpaper-preview.jpg');">
+                    <div class="item-desc">
+                        <h3>ÁLBUMES</h3>
+                        <div class="glass">
+                            <p>¡Bienvenidos a nuestra página de álbumes musicales! Aquí encontrarás información
+                                detallada sobre diferentes álbumes de música. Explora nuestra colección de álbumes,
+                                descubre los artistas y géneros musicales que te interesan y obtén información sobre las
+                                canciones incluidas en cada álbum. Mantente al día con los últimos lanzamientos y
+                                descubre álbumes clásicos que han dejado huella en la industria musical. ¡Sumérgete en
+                                el mundo de la música a través de nuestros álbumes seleccionados y disfruta de la
+                                experiencia musical!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('img_pagPrincipal/concierto.jpg');">
+                    <div class="item-desc">
+                        <h3>CONCIERTOS</h3>
+                        <div class="glass">
+                            <p>Nuestra plataforma ofrece información actualizada sobre conciertos, incluyendo fechas,
+                                lugares, artistas y precios de boletos en tiempo real, además de detalles sobre la
+                                ubicación y clima del evento para planificar mejor tu experiencia. También podrás
+                                explorar eventos, desde los más populares hasta los más íntimos, en diversas ciudades y
+                                países, y aprovechar la integración de nuestra API para obtener la información más
+                                precisa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('./img_pagPrincipal/IndexFondoData3.jpg');">
+                    <div class="item-desc">
+                        <h2>DATA CURIOSA SOBRE ESTA PÁGINA</h2>
+                        <div class="glass">
+                            <p>Esta pagina se empezo por un proyecto en la escuela tecnica n°4 de Berazategui con el fin
+                                de
+                                perfecionar nuestra habilidad para diseñar y hacer una página web y aprender en el
+                                proceso css.<br><br>
+                                <b>¿De donde surgio la idea de la pagina?</b><br>
+                                Esto surgio en base de un álbum que teníamos en común que se llama <a href="tainy.html">
+                                    DATA
+                                    de Tainy </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(".custom-carousel").owlCarousel({
+                loop: true
+            });
+            $(document).ready(function () {
+                $(".custom-carousel .item").click(function () {
+                    $(".custom-carousel .item").not($(this)).removeClass("active");
+                    $(this).toggleClass("active");
+                });
+            });
+        </script>
+</body>
+
+</html>

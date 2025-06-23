@@ -1,0 +1,170 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+        background: linear-gradient(to left bottom,
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(11, 68, 37),
+        rgb(11, 105, 47),
+        rgb(14, 161, 71),
+        #1cd463);
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar { width: 0px; height: 9px;}
+::-webkit-scrollbar-button { width: 0px; height: 0px;}
+::-webkit-scrollbar-thumb { background: transparent; border: 0px none #fff; border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover { background: #3a77a1;}
+::-webkit-scrollbar-thumb:active { background: #8dd0d8;}
+::-webkit-scrollbar-track {background: transparent;border: 0px solid #aaa; border-radius: 5px;}
+::-webkit-scrollbar-track:hover { background: #e4e4e4;}
+::-webkit-scrollbar-track:active { background: #d2d2d2;}
+::-webkit-scrollbar-corner { background: transparent;}
+html{
+    scroll-behavior: smooth;
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    list-style-type: none;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li{
+    margin: 5px;
+    font-size: 0.9em;
+}
+#nav li{
+    margin: 5px;
+    font-size: 6mm;
+}
+nav li :hover{
+    background-color: rgb(49, 44, 44);
+}
+html{
+    scroll-behavior: smooth;
+}
+nav a{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 150px;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+button{
+    background: #2c2c2c40;
+    backdrop-filter: blur(0.9rem);
+    -webkit-backdrop-filter: blur(0.9rem);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.fondo{
+    align-content: center;
+    text-align: center;
+    /*background-image: url("./img_login/2.jpeg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    width:100%;
+    height: fit-content;*/
+}
+.card-container{
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #2c2c2c40;
+    margin: 0 auto;
+    size: cover;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+}
+.glass{
+    background: #2c2c2c40;
+    backdrop-filter: blur(0.9rem);
+    -webkit-backdrop-filter: blur(0.9rem);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.glass2{
+    background: #ff0000d0;
+    backdrop-filter: blur(0.9rem);
+    -webkit-backdrop-filter: blur(0.9rem);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 0 auto;
+    
+}
+h1{
+    font-size: 2.5vw;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(30, 160, 99);
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    letter-spacing: 0.09mm;
+}
+h3{
+    font-size: 1em;
+    font-family: monospace;
+    color: #e01212;
+    margin-bottom: 0.5cm;
+    margin-top: 0.5cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+    letter-spacing: 0.09mm;
+}
+h4{
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    letter-spacing: 0.09mm;
+}
+a:link{
+    color: rgb(201, 68, 68);
+    text-decoration: none;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+a:visited{
+    color: rgb(27, 6, 6);
+}
+a:hover{
+    color: rgb(201, 9, 9);
+}
+a:active{
+    color: rgb(255, 0, 0);
+}

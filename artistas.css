@@ -1,0 +1,124 @@
+* {
+	padding: 0; /* Establece el relleno de todos los elementos en 0 */
+	margin: 0; /* Establece el margen de todos los elementos en 0 */
+	box-sizing: border-box; /* Establece el modelo de caja de todos los elementos en border-box */
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+::-webkit-scrollbar { width: 0px; height: 9px;}
+::-webkit-scrollbar-button { width: 0px; height: 0px;}
+::-webkit-scrollbar-thumb { background: transparent; border: 0px none #fff; border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover { background: #3a77a1;}
+::-webkit-scrollbar-thumb:active { background: #8dd0d8;}
+::-webkit-scrollbar-track {background: transparent;border: 0px solid #aaa; border-radius: 5px;}
+::-webkit-scrollbar-track:hover { background: #e4e4e4;}
+::-webkit-scrollbar-track:active { background: #d2d2d2;}
+::-webkit-scrollbar-corner { background: transparent;}
+body {
+	background: #1D202B; /* Establece el color de fondo del cuerpo en un color oscuro (#1D202B) */
+	color: #fff; /* Establece el color de texto del cuerpo en blanco (#fff) */
+}
+
+.contenedor {
+	width: 90%; /* Establece el ancho del elemento al 90% de su contenedor padre */
+	max-width: 1000px; /* Establece el ancho máximo del elemento en 1200 píxeles */
+	margin: auto; /* Centra el elemento horizontalmente */
+}
+
+.titulo {
+	font-size: 24px; /* Establece el tamaño de fuente del elemento en 24 píxeles */
+	padding: 20px 0; /* Establece el relleno superior e inferior del elemento en 20 píxeles y el relleno izquierdo y derecho en 0 */
+}
+
+.contenedor-conciertos {
+	display: grid; /* Establece la propiedad de visualización del elemento en grid */
+	grid-template-columns: repeat(3, 1fr); /* Establece las columnas de la cuadrícula para repetir 3 veces con cada columna ocupando una fracción igual del espacio disponible */
+	gap: 20px; /* Establece el espacio entre los elementos de la cuadrícula en 20 píxeles */
+	margin-bottom: 1cm;
+}
+
+.card {
+	border-radius: 10px; /* Establece el radio de borde del elemento en 10 píxeles, dándole esquinas redondeadas */
+	min-height: 200px; /* Establece la altura mínima del elemento en 200 píxeles */
+	font-weight: bold; /* Establece el peso de la fuente del elemento en negrita */
+	padding: 20px; /* Establece el relleno del elemento en 20 píxeles */
+	position: relative; /* Establece la posición del elemento en relativo */
+	overflow: hidden; /* Oculta cualquier contenido que se desborde del elemento */
+	background-size: cover; /* Escala la imagen de fondo para cubrir todo el elemento */
+	background-position: center center; /* Centra la imagen de fondo dentro del elemento */
+}
+h3{
+	text-shadow: 0.5px 1px 1px black;
+}
+p{
+	text-shadow: 0.5px 1px 1px black;
+}
+.card .textos {
+	height: 100%; /* Establece la altura del elemento al 100% de su contenedor padre */
+	display: flex; /* Establece la propiedad de visualización del elemento en flex */
+	flex-direction: column; /* Establece la dirección de los elementos flexibles para que se apilen verticalmente */
+	justify-content: space-between; /* Distribuye uniformemente los elementos flexibles a lo largo del eje vertical, con espacio entre ellos */
+	font-family: 'Roboto', sans-serif; /* Establece la familia de fuentes del elemento en "Roboto" o una fuente genérica sans-serif */
+    text-shadow: 0 0 3px rgba(0,0,0,0.8);
+}
+.contenedor-conciertos .card:hover {
+	transform: scale(1.08);
+	transition: transform .3s;
+	transition-delay: .1s;
+}
+
+@media screen and (max-width: 900px) {
+	/* Estilos para pantallas con un ancho máximo de 900px */
+}
+
+@media screen and (max-width: 700px) {
+	/* Estilos para pantallas con un ancho máximo de 700px */
+}
+
+@media screen and (max-width: 600px) {
+	/* Estilos para pantallas con un ancho máximo de 600px */
+}
+
+#nav{
+    display: flex; 
+    justify-content: center;
+    background-color:#303444;
+    list-style-type: none;
+}
+#nav li{
+    margin: 5px;
+    font-size: 6mm;
+ }
+
+ nav a{
+text-decoration: none;
+color: white;
+padding: 10px;
+width: 150px;
+ }
+
+nav li :hover{
+background-color: black;
+}
+
+a:link{
+	color: white;
+	text-decoration: none;
+	font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+   }
+a:visited{
+	color: white;
+}
+a:hover{
+	color: white;
+}
+a:active{
+	color: white;
+}
